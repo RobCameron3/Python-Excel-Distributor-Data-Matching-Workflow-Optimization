@@ -1,107 +1,180 @@
-📊 Python & Excel – Distributor Data Matching & Workflow Optimization
-(Data Analysis, Automation & Operational Strategy Project)
-🌎 Overview
+## 📊 Key Results & Findings
 
-Solmetex receives recurring customer data from dental distributors that must be matched to existing customer accounts or researched manually. I spent several months reviewing this data, classifying mapping outcomes, and analyzing how the workload differed by distributor, worksheet type, match-score range, and final mapping status.
+The analysis transformed several months of completed matching work into measurable evidence of **where the team's time was producing the greatest return**.
 
-I then developed a Python/Pandas workflow in Jupyter Notebook to consolidate the completed workbook data and built Excel PivotTable analyses to determine which portions of the monthly workload could be handled most efficiently.
+Rather than simply measuring an overall match rate, I identified:
 
-The project ultimately established a repeatable strategy for processing incoming monthly distributor data, creating capacity for the team to address a more difficult historical customer-mapping backlog.
+- 🏆 **The highest-volume and highest-performing distributor workbooks**
+- 🎯 **The score ranges producing the greatest number of successful matches**
+- ⚡ **Where Quick Matches were concentrated**
+- 🔍 **Where manual review continued to produce valuable matches**
+- ⏱️ **Where large amounts of review time produced very few results**
+- 📦 **Which distributor × score-range combinations should receive priority**
+- ⚙️ **Which portions of the workflow presented the strongest opportunities for automation**
 
-🎯 Objective
+### 🔥 Score-Range Finding
 
-Determine what types of records Solmetex should expect each month and how the team should prioritize them.
+One of the strongest findings was that records did **not** need to be treated equally.
 
-Rather than treating every incoming record equally, the goal was to answer:
+> **The 40–80 score range captured 85.5% of Quick Matches while representing only 11.7% of the records evaluated.**
 
-Which distributors and score ranges generate the greatest volume and strongest matching opportunities, and how should that information be used to distribute monthly work across the team?
+At the opposite end:
 
-Solving the recurring monthly workload was critical because any records that were not completed would become additional backlog.
+> **Scores below 40 represented a much larger portion of the workload while producing only 2.3% of Quick Matches.**
 
-❓ Business Challenge
+This showed that the team could concentrate its attention on the portions of the data with the **highest expected return instead of spending equal time across thousands of records with dramatically different probabilities of producing a useful result.**
 
-Solmetex was working through a customer-mapping backlog while continuing to receive new distributor data every month.
+---
 
-The historical backlog was substantially harder to resolve than normal incoming records. Dental practices can change ownership, relocate, close, transition to successor dentists, or coexist with other practices at the same address. Older records therefore often require extensive research and can also contain duplicate or outdated account information.
+## 🏆 Distributor & Workbook Prioritization
 
-The team could not efficiently reduce that backlog if new monthly records continued accumulating faster than they could be processed.
+The analysis went beyond an overall score threshold.
 
-The first problem was therefore not simply “How do we clear the backlog?”
+I compared performance across individual **distributor workbooks and score ranges** to determine which combinations consistently generated the strongest results.
 
-It was:
+This allowed the monthly workload to be approached strategically:
 
-“How do we create an efficient and predictable process for handling the recurring monthly workload so today's records don't become tomorrow's backlog?”
+**Highest-value workbooks & score ranges first**  
+⬇️  
+**Capture the greatest concentration of matches**  
+⬇️  
+**Complete productive work faster**  
+⬇️  
+**Move lower-yield records to the appropriate manual-review process**
 
-💡 Solution
+Because the company receives similar distributor data on a recurring basis, the historical results also provided a baseline for **what types of records, score distributions, and matching opportunities the team could expect when new files arrived each month.**
 
-I manually reviewed the distributor workbooks over several months and classified records according to their actual mapping outcomes, including Quick Match, Manual Match, Create New, and Not Mapped. The workflow explicitly tracked Quick Matches, completion of manual review, manual-match outcomes, and the resulting final mapping status.
+Instead of beginning each month without knowing where to focus, the team could use previous performance to determine **where analyst time was most likely to generate results.**
 
-I then used Python, Pandas, and Jupyter Notebook to consolidate those completed results and transform the manual work into structured analytical data.
+---
 
-Using Excel PivotTables and additional analysis, I compared:
+## ⏱️ Time & Efficiency Impact
 
-Distributor × Worksheet Type × Score Range × Record Volume × Mapping Outcome
+The primary value of the project was **time efficiency**.
 
-This allowed me to identify where the workload was actually concentrated and which combinations consistently produced useful matches.
+The analysis provided a framework for distributing work based on actual historical performance rather than treating every workbook and record equally.
 
-📊 Key Results
+That meant analysts could spend more time on records with a demonstrated likelihood of producing a match and less time repeatedly researching low-yield portions of the data.
 
-The analysis identified the highest-priority workbooks/distributors and score ranges, giving the team a data-driven way to determine where monthly review time should be concentrated instead of distributing work blindly.
+### The operational effect:
 
-More importantly, the analysis established what Solmetex could reasonably expect from incoming distributor files each month.
+**Better prioritization**  
+➡️ **Less unnecessary manual research**  
+➡️ **Faster monthly processing**  
+➡️ **More work completed with the same team resources**  
+➡️ **More analyst capacity available for difficult records**
 
-For example, one analysis found that the 40–80 score range contained 85.5% of Quick Matches while representing only 11.7% of the records being evaluated. Records below 40 represented a much larger portion of the workload while producing only 2.3% of Quick Matches.
+In a recurring operational process, **time saved on each monthly file compounds**. Improving how the team handles today's workload creates additional capacity for the work that could not previously be reached.
 
-I also analyzed distributor × score-range combinations, rather than assuming one universal score threshold worked equally well for every distributor. Minimum-record safeguards were incorporated so small samples would not be mistaken for meaningful high-performing segments.
+---
 
-That provided a framework for determining:
+## 🔄 Why Monthly Efficiency Mattered
 
-Where should we start? → What should be prioritized? → What can be handled quickly? → What requires manual research? → How should the workload be distributed across the team?
+The company was not working with a fixed dataset.
 
-🔄 Operational Impact
+**New distributor records continued arriving every month while a historical customer-mapping backlog already existed.**
 
-The project created a chain reaction across the broader customer-data process:
+Any monthly records that could not be completed risked becoming additional backlog.
 
-Monthly distributor data
-↓
-Prioritize distributors & score ranges
-↓
-Increase efficient matching / reduce unnecessary research
-↓
-Prevent new monthly records from becoming backlog
-↓
-Create capacity to attack the historical backlog
-↓
-Improve customer/account information available to downstream teams
-↓
-Help Sales identify the appropriate practices/accounts to contact
+That created a cycle:
 
-This matters because customer matching is not an isolated data-cleaning exercise. Accurately determining which dental practice, dentist, or organization a distributor record belongs to improves the customer information available to the business.
+**New Monthly Data**  
+⬇️  
+**Incomplete Monthly Research**  
+⬇️  
+**Records Added to Backlog**  
+⬇️  
+**Larger Future Research Requirement**
 
-That information can ultimately help the Sales team identify the correct customers and opportunities to pursue, connecting better data management to revenue-generating activity.
+My analysis was designed to help reverse that cycle.
 
-🗃️ Why the Backlog Was More Difficult
+**Prioritize Monthly Data Using Historical Results**  
+⬇️  
+**Process Incoming Records More Efficiently**  
+⬇️  
+**Prevent New Work From Continuously Expanding the Backlog**  
+⬇️  
+**Create Capacity to Work Historical Records**  
+⬇️  
+**Reduce the Existing Backlog**
 
-Historical records become progressively harder to resolve.
+---
 
-A dental office associated with an old record may have:
+## 🗃️ Why the Historical Backlog Was More Expensive to Research
 
-changed ownership,
-moved locations,
-closed,
-been succeeded by another dentist or practice,
-changed its business name,
-begun sharing an address with another practice, or
-accumulated duplicate/outdated customer records.
+Historical records were generally more complicated than current monthly records because customer information changes over time.
 
-That means historical research can require reconstructing the relationship between the customer at the time of the original transaction and the business occupying that location today.
+A dental practice may have:
 
-By first creating a structured way to control the recurring monthly workload, the team could devote more time to these complicated historical cases rather than continuously adding new unresolved records to the backlog.
+- 🏢 Changed ownership
+- 🦷 Been succeeded by another dentist
+- 📍 Relocated
+- 🔄 Changed its business or practice name
+- 🚪 Closed
+- 🏥 Begun coexisting with another practice at the same location
+- 📑 Accumulated duplicate or outdated account records
 
-✅ Outcome
+As records age, an analyst may therefore need to reconstruct **what business operated at the location historically, what happened to it, and how that organization relates to the current customer account.**
 
-This project transformed several months of manual matching work into a repeatable operational framework for managing Solmetex's monthly distributor data.
+This makes preventing new records from unnecessarily entering the backlog especially important.
 
-Instead of simply reporting historical performance, the analysis showed which areas of the incoming workload should receive attention first, how work could be distributed more effectively across the team, where automation could potentially reduce manual effort, and what types of matching results the business could expect each month.
+---
 
-Most importantly, controlling the recurring workload created a path toward addressing the company's more complicated historical customer-mapping backlog—improving the underlying customer data that ultimately supports downstream business and Sales activity.
+## 💰 Business Impact
+
+The value of improving the matching process extends beyond the data team.
+
+Accurate and timely customer mapping improves the information available to downstream teams.
+
+### The full business chain:
+
+**Distributor Data Arrives**  
+⬇️  
+**Data Team Prioritizes High-Value Work**  
+⬇️  
+**Customer Records Are Matched Faster**  
+⬇️  
+**Monthly Work Is Completed More Efficiently**  
+⬇️  
+**Analyst Capacity Opens for Historical Backlog**  
+⬇️  
+**Customer & Account Data Becomes More Complete**  
+⬇️  
+**Sales Receives Better Information About Customers & Practices**  
+⬇️  
+**Sales Can Identify and Prioritize Outreach Opportunities**  
+⬇️  
+**Improved Data Supports Revenue-Generating Activity**
+
+The project therefore connected **data analysis and workflow efficiency to a larger business outcome**: reducing the amount of employee time required to process customer data while improving the information available for customer outreach.
+
+In essence, **analyst time became a measurable business resource**. Saving time in the matching process meant that the same team could complete more work, address more of the backlog, and provide useful customer information to downstream teams faster.
+
+---
+
+## ✅ Outcome
+
+This project turned several months of manual matching experience into a **repeatable, data-driven operating strategy**.
+
+I moved the process from:
+
+> **"Here is a large amount of distributor data that needs to be reviewed."**
+
+to:
+
+> **"Here is where the workload is concentrated, which distributors and score ranges historically produce the strongest results, which records should be prioritized first, and where analyst time can be used most efficiently."**
+
+The result was not simply a dashboard or summary.
+
+It provided a framework for:
+
+- 🎯 **Prioritizing the most productive monthly work**
+- 🏆 **Identifying the strongest distributor and score-range combinations**
+- ⚡ **Capturing Quick Matches more efficiently**
+- 🔍 **Directing manual research where it provides greater value**
+- ⚙️ **Identifying opportunities for additional automation**
+- ⏱️ **Reducing analyst time spent on low-yield records**
+- 📥 **Preventing monthly work from continually expanding the backlog**
+- 🗃️ **Creating capacity to resolve more difficult historical records**
+- 📈 **Improving customer information available to downstream teams**
+- 💰 **Connecting data efficiency to sales and revenue-supporting activity**
