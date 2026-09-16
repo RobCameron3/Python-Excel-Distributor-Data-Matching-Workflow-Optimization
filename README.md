@@ -2,6 +2,42 @@
 
 ### *Data Analysis, Automation & Operational Strategy Project*
 
+> **Transforming months of manual customer-matching data into a Python- and Excel-driven strategy for prioritizing monthly workloads, improving team efficiency, preventing new backlog, and creating capacity to resolve complex historical customer records.**
+
+---
+
+## 🚀 Project Summary
+
+This project transformed **several months of manual distributor/customer matching work into a repeatable, data-driven operational strategy**.
+
+After manually reviewing and classifying customer records across multiple distributor workbooks, I developed a **Python/Pandas workflow in Jupyter Notebook** to consolidate the completed results, clean and organize the data, group match scores into meaningful ranges, and summarize mapping outcomes at scale.
+
+I then brought the Python-generated results into **Microsoft Excel and built PivotTables and performance analyses** to determine how matching success changed across **distributors, workbook types, score ranges, record volumes, and final mapping outcomes**.
+
+The purpose went far beyond reporting historical results. The analysis showed **where the team's limited research time could produce the greatest return**, helping determine which portions of incoming monthly distributor data should be prioritized, how work could be distributed more efficiently across team members, and where low-yield manual research could be reduced.
+
+This was especially important because Solmetex was simultaneously dealing with a **historical customer-mapping backlog**. If incoming monthly records were not processed efficiently, they would simply become additional backlog—and those records become increasingly difficult to resolve as dental practices change ownership, relocate, close, change names, or transition to successor practices.
+
+Ultimately, the project connected technical analysis to a larger business objective:
+
+> **Process monthly data more efficiently → save employee research time → prevent additional backlog → create capacity to resolve historical records → improve customer/account data → provide better information to Sales → support revenue-generating activity.**
+
+---
+
+## ⭐ Project Highlights
+
+- 🐍 Developed a **Python/Pandas workflow in Jupyter Notebook** to consolidate and analyze completed customer-matching results across multiple distributor workbooks.
+- 📊 Built **Excel PivotTables and performance analyses** to compare distributors, workbook types, score ranges, record volumes, and final mapping outcomes.
+- 🎯 Identified the **highest-value portions of the monthly workload**, giving the team a data-driven basis for deciding which records should receive attention first.
+- ⚡ Found that **scores from 40–80 captured 85.5% of Quick Matches while representing only 11.7% of evaluated records**.
+- 🔻 Found that **scores below 40 generated only 2.3% of Quick Matches**, highlighting a large portion of the workload with comparatively low Quick Match return.
+- 📦 Analyzed **distributor + workbook + score-range combinations** rather than relying on one universal threshold.
+- ⏱️ Created a framework for **reducing unnecessary manual research and allocating employee time toward higher-value work**.
+- 👥 Made the monthly workload easier to **prioritize and distribute across team members**, helping the same team process incoming records more efficiently.
+- 🗃️ Connected monthly efficiency directly to **backlog reduction**: completing current records faster helps prevent them from becoming future backlog while freeing time to research more difficult historical records.
+- 🤖 Identified areas where consistent historical matching performance could support **future automation opportunities**.
+- 💰 Connected data-team efficiency to downstream business value by improving the customer/account information available for **Sales targeting and revenue-generating outreach**.
+
 ---
 
 ## 🌎 Overview
@@ -40,10 +76,10 @@ This created two connected problems.
 
 New distributor records continuously needed to be:
 
-- ⚡ Quick Matched
-- 🔍 Manually researched and matched
-- ➕ Created as new customer accounts
-- ❌ Classified as Not Mapped when sufficient evidence could not be established
+- ⚡ **Quick Matched**
+- 🔍 **Manually researched and matched**
+- ➕ **Created as new customer accounts**
+- ❌ **Classified as Not Mapped** when sufficient evidence could not be established
 
 Without an efficient process for handling the recurring monthly workload, unfinished records would simply become **additional backlog**.
 
@@ -131,19 +167,13 @@ Rather than evaluating thousands of individual scores independently, I grouped t
 
 This made it possible to compare:
 
-**Score Range**
-+
-**Number of Records**
-+
-**Quick Matches**
-+
-**Manual Matches**
-+
-**Create New**
-+
-**Not Mapped**
-+
-**Overall Match Performance**
+- 🎯 **Score Range**
+- 📊 **Number of Records**
+- ⚡ **Quick Matches**
+- 🔍 **Manual Matches**
+- ➕ **Create New**
+- ❌ **Not Mapped**
+- 📈 **Overall Match Performance**
 
 The purpose was to determine whether certain portions of the score distribution consistently produced more valuable results than others.
 
@@ -172,7 +202,7 @@ This allowed me to move beyond looking at individual customer records and instea
 
 ## 📈 Step 5: Distributor & Workbook Performance
 
-Not every distributor produced the same type or quality of data.
+Not every distributor produced the same type, volume, or quality of data.
 
 Using the PivotTable analysis, I compared distributors and workbook types to determine:
 
@@ -186,6 +216,8 @@ This was important because a single universal score threshold would not necessar
 
 Instead, the analysis could identify **specific distributor + score-range combinations** that historically produced stronger results.
 
+This gave the team a clearer expectation of **what type and volume of work could arrive each month and how different distributor files should be approached.**
+
 ---
 
 ## 🔥 Step 6: Identify the Highest-Value Work
@@ -194,7 +226,7 @@ One of the most important outcomes was identifying **where employee time produce
 
 Rather than assigning equal attention to every record, the analysis showed that some portions of the workload contained a much greater concentration of successful matches.
 
-### 📊 Key Finding
+### 📊 Key Quantitative Findings
 
 > **Scores between 40–80 captured 85.5% of Quick Matches while representing only 11.7% of the evaluated records.**
 
@@ -202,29 +234,43 @@ At the opposite end:
 
 > **Scores below 40 represented a much larger portion of the workload while producing only 2.3% of Quick Matches.**
 
-This demonstrated that **record volume and record value were not distributed evenly throughout the workload.**
+These results demonstrated that **record volume and record value were not distributed evenly throughout the workload**.
 
-The analysis therefore provided a quantitative basis for determining where the team's attention could produce the greatest number of successful outcomes in the least amount of time.
+A relatively targeted portion of the data contained the overwhelming majority of Quick Match opportunities, while substantial volumes of lower-scoring records produced comparatively little Quick Match value.
+
+That distinction matters operationally because every record researched requires employee time.
+
+The analysis therefore provided a quantitative basis for asking:
+
+> **Where can the team spend its next hour to complete the greatest amount of meaningful work?**
 
 ---
 
-## 🏆 Step 7: Identify Priority Workbooks & Score Ranges
+## 🏆 Step 7: Prioritize Workbooks, Distributors & Score Ranges
 
-The analysis was expanded beyond overall score performance to identify the **highest-value workbook/distributor and score-range combinations**.
+The analysis expanded beyond overall score performance to identify the **highest-value workbook/distributor and score-range combinations**.
 
-This allowed the monthly workload to be approached more strategically.
+Instead of approaching every monthly file the same way:
 
-Instead of:
-
-> **Receive file → Start at the top → Review everything equally**
+> **Receive File → Start at the Top → Review Everything Equally**
 
 The process could become:
 
-> **Receive file → Identify distributor/workbook → Evaluate score range → Prioritize historically productive segments → Distribute work accordingly**
+> **Receive File → Identify Distributor/Workbook → Evaluate Score Range → Prioritize Historically Productive Segments → Distribute Work Across the Team**
 
-The analysis could therefore identify the **top-performing workbooks and score ranges that should receive priority attention each month**.
+This created a much more strategic approach to the monthly workload.
 
-This was especially valuable because the historical data provided an indication of **what types of results the team could expect from future monthly distributor files.**
+The historical analysis could help the team understand:
+
+- 📦 **Which distributor files deserve immediate attention**
+- 🎯 **Which score ranges should be tackled first**
+- 📊 **How much work is likely to fall into each category**
+- ⚡ **Where Quick Matches are most concentrated**
+- 🔍 **Where manual research is likely to provide value**
+- ⏱️ **Where significant employee time may produce limited matching return**
+- 👥 **How work can be divided across team members more efficiently**
+
+Rather than simply knowing how the previous month's files performed, the team could use historical patterns to establish **expectations and priorities for future incoming files.**
 
 ---
 
@@ -232,13 +278,13 @@ This was especially valuable because the historical data provided an indication 
 
 The project also helped identify portions of the matching process that could potentially support greater automation.
 
-By analyzing:
+By combining:
 
-**Distributor**
+**Distributor**  
 +
-**Score Range**
+**Score Range**  
 +
-**Record Volume**
+**Record Volume**  
 +
 **Historical Match Performance**
 
@@ -248,19 +294,32 @@ Minimum-record safeguards were also considered so that extremely small samples w
 
 This created a more targeted framework for evaluating automation rather than assuming that **one score threshold should apply to every distributor and every record type.**
 
+The analysis could therefore help distinguish between:
+
+- 🤖 Records potentially suitable for greater automation
+- 👤 Records where human review remained valuable
+- 🔍 Records requiring deeper manual research
+- ⏱️ Records where extensive research historically produced limited return
+
 ---
 
 ## ⏱️ Time & Efficiency Impact
 
-The core value of the project was **time efficiency**.
+The core business value of the project was **time efficiency**.
 
 Customer matching requires employee research time, and that time is limited.
 
-If team members spend large amounts of time researching portions of the dataset that historically produce very few successful matches, less time remains for records with stronger matching potential or for addressing the historical backlog.
+If several team members spend significant portions of their day researching records that historically produce very few successful matches, that time cannot simultaneously be spent on:
 
-The project created a way to use historical data to determine **where employee time should be concentrated.**
+- Higher-probability customer matches
+- More valuable manual-review opportunities
+- Incoming monthly records
+- Difficult historical records
+- Other data-quality responsibilities
 
-### Before
+The analysis created a way to use historical results to determine **where employee time should be concentrated.**
+
+### ❌ Before
 
 **Incoming Distributor Data**  
 ⬇️  
@@ -270,9 +329,11 @@ The project created a way to use historical data to determine **where employee t
 ⬇️  
 **Employee Research Time Consumed**  
 ⬇️  
-**Unfinished Records Become Additional Backlog**
+**Unfinished Records Remain**  
+⬇️  
+**Records Become Additional Backlog**
 
-### Data-Driven Approach
+### ✅ Data-Driven Approach
 
 **Incoming Distributor Data**  
 ⬇️  
@@ -284,13 +345,25 @@ The project created a way to use historical data to determine **where employee t
 ⬇️  
 **Distribute Work More Efficiently Across the Team**  
 ⬇️  
-**Complete Monthly Work Faster**  
+**Reduce Low-Yield Research**  
+⬇️  
+**Complete More Monthly Work in the Available Time**  
 ⬇️  
 **Create Capacity for Historical Backlog**
 
-In this process, **time has direct business value**.
+### ⏱️ Why Time Matters
 
-Reducing unnecessary research means the same team can process more meaningful records without simply increasing labor hours.
+In this workflow, **employee time has direct business value**.
+
+The goal was not simply to make an Excel report faster.
+
+The goal was to make the **people performing the actual work more efficient**.
+
+If historical data can identify which records are most likely to produce meaningful results, team members can spend less time repeatedly researching low-yield portions of the workload and more time completing work that moves the process forward.
+
+That means:
+
+> **Less unnecessary research + better prioritization + smarter workload distribution = more completed work from the same available employee hours.**
 
 ---
 
@@ -302,31 +375,43 @@ Every month that incoming distributor records were not completed created **addit
 
 Those records could become more difficult over time because:
 
-- Ownership changes
-- Practice names change
-- Dentists retire
-- New dentists take over practices
-- Businesses relocate
-- Practices close
-- Multiple businesses occupy the same address
-- Customer records become outdated
-- Duplicate accounts accumulate
+- 🏢 Ownership changes
+- 🔄 Practice names change
+- 🦷 Dentists retire
+- 👨‍⚕️ New dentists take over practices
+- 📍 Businesses relocate
+- 🚪 Practices close
+- 🏥 Multiple businesses occupy the same address
+- 📑 Customer records become outdated
+- 🔁 Duplicate accounts accumulate
+
+A customer relationship that may be relatively straightforward to identify today can become substantially harder to reconstruct years later.
 
 Therefore, improving the monthly process did more than make the current month's work faster.
 
-It helped **prevent the future backlog from growing while simultaneously creating additional capacity to attack the existing backlog.**
+It helped accomplish **two goals at the same time**:
+
+### 1️⃣ Prevent the backlog from continuing to grow
+
+Process a greater portion of current distributor data before those unresolved records become future historical research.
+
+### 2️⃣ Create capacity to reduce the existing backlog
+
+Time saved through better prioritization can be redirected toward the older records that require deeper investigation.
+
+This is why controlling the monthly workload was essential to addressing the larger historical problem.
 
 ---
 
 ## 🔄 Operational Impact
 
-The project established a chain of operational improvements:
+The complete workflow created a chain of operational improvements:
 
 **Months of Manual Matching Results**  
 ⬇️  
 **Python/Pandas Consolidation in Jupyter Notebook**  
 ⬇️  
-**Structured Summary Data**  
+**Structured Analytical Dataset**  
 ⬇️  
 **Excel PivotTable Analysis**  
 ⬇️  
@@ -334,15 +419,17 @@ The project established a chain of operational improvements:
 ⬇️  
 **Identify Highest-Value Monthly Work**  
 ⬇️  
-**Distribute Team Work More Efficiently**  
+**Prioritize & Distribute Team Work More Efficiently**  
 ⬇️  
 **Reduce Time Spent on Low-Yield Research**  
 ⬇️  
-**Process Incoming Monthly Data Faster**  
+**Complete More Incoming Monthly Records**  
 ⬇️  
 **Prevent Additional Backlog**  
 ⬇️  
-**Create Capacity to Resolve Historical Backlog**
+**Free Employee Capacity**  
+⬇️  
+**Resolve More Difficult Historical Records**
 
 ---
 
@@ -362,13 +449,15 @@ Improving that information creates a downstream chain:
 ⬇️  
 **More Useful Information for Sales**  
 ⬇️  
-**Sales Can Better Identify Which Customers to Contact**  
+**Sales Can Better Identify Appropriate Customers to Contact**  
 ⬇️  
 **More Focused Revenue-Generating Outreach**
 
-This means improvements in matching efficiency can create value beyond the data team.
+The project's value therefore extends beyond the immediate data workflow.
 
-**Saving employee research time allows more records to be processed, improves the customer information available to other teams, and ultimately supports revenue-generating business activity.**
+> **Saving employee research time allows more records to be processed, reduces unnecessary manual effort, creates capacity for backlog reduction, improves customer information, and supports the teams that use that information for business activity.**
+
+In essence, **time saved in the data process creates capacity elsewhere in the organization.**
 
 ---
 
@@ -434,7 +523,9 @@ This means improvements in matching efficiency can create value beyond the data 
 ⬇️  
 **Improve Team Efficiency**  
 ⬇️  
-**Create Capacity for Backlog Reduction**
+**Prevent Additional Backlog**  
+⬇️  
+**Create Capacity for Historical Backlog Reduction**
 
 ---
 
@@ -442,16 +533,20 @@ This means improvements in matching efficiency can create value beyond the data 
 
 This project transformed **several months of manual customer-matching work into a repeatable analytical framework for managing Solmetex's recurring distributor data.**
 
-Using **Python and Pandas in Jupyter Notebook**, I consolidated the completed workbook results and converted record-level decisions into structured summary data.
+Using **Python and Pandas in Jupyter Notebook**, I consolidated completed workbook results and converted thousands of individual record-level decisions into structured summary data that could be analyzed at scale.
 
-Using **Excel PivotTables**, I analyzed that data across distributors, workbook types, score ranges, record volumes, and final mapping outcomes to identify **where successful matches were concentrated and where employee research time was producing limited returns**.
+Using **Excel PivotTables**, I analyzed the results across distributors, workbook types, score ranges, record volumes, and final mapping outcomes to identify **where successful matches were concentrated and where employee research time was producing limited returns**.
 
 The analysis produced measurable findings—including the discovery that **40–80 score records captured 85.5% of Quick Matches while representing only 11.7% of evaluated records**, compared with only **2.3% of Quick Matches coming from scores below 40**.
 
-More importantly, the project established a method for identifying the **highest-priority workbooks, distributors, and score ranges each month**, allowing work to be distributed more efficiently across the team.
+But the most important outcome went beyond those individual percentages.
 
-That efficiency creates a larger business benefit:
+The project established a method for identifying the **highest-priority distributors, workbooks, and score ranges each month**, giving the team a framework for deciding **what to work first, what results to expect, and how to distribute the workload more efficiently across available employees**.
 
-> **Handle incoming monthly data faster → prevent new backlog → free employee time → attack the existing historical backlog → improve customer data → provide better information to Sales → support revenue-generating activity.**
+That efficiency creates a much larger business chain:
 
-The project demonstrates how **Python automation, Excel analytics, operational knowledge, and business reasoning can be combined to turn historical data into a practical strategy for improving an ongoing business process.**
+> ### **Handle incoming monthly data faster → save employee time → prevent new backlog → free capacity → attack the existing historical backlog → improve customer data → provide better information to Sales → support revenue-generating activity.**
+
+Rather than using Python and Excel simply to describe historical performance, this project used **data to improve how future work could be performed**.
+
+It demonstrates how **Python automation, Pandas data transformation, Jupyter Notebook analysis, Excel PivotTables, operational knowledge, and business reasoning** can be combined to turn months of manual work into a practical strategy for improving an ongoing business process.
