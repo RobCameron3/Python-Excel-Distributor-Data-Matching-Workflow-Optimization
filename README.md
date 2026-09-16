@@ -1,78 +1,228 @@
 # 📊 Python & Excel – Distributor Data Matching & Workflow Optimization
 
-### *Data Analysis, Automation & Operational Strategy Project*
+### *Python, Pandas, Jupyter Notebook, Excel PivotTables, Power Pivot & DAX Business Analytics Project*
 
-> **Transforming months of manual customer-matching data into a Python- and Excel-driven strategy for prioritizing monthly workloads, improving team efficiency, preventing new backlog, and creating capacity to resolve complex historical customer records.**
+> **Transforming months of manual customer-matching data into a data-driven strategy for prioritizing monthly workloads, improving team efficiency, identifying automation opportunities, and creating capacity to reduce a complex historical customer-mapping backlog.**
 
 ---
 
-## 🚀 Project Summary
+# 🚀 Project Summary
 
-This project transformed **several months of manual distributor/customer matching work into a repeatable, data-driven operational strategy**.
+This project began with a real operational challenge: **manual customer-mapping review was consuming a significant amount of employee time while new distributor records continued arriving every month and an existing historical backlog still needed to be addressed.**
+
+Leadership wanted to understand whether historical matching results could be used to determine **which records deserved immediate attention, where manual research was producing meaningful results, where the process was becoming low-yield, and how much of the monthly workload could be completed efficiently by starting with the strongest potential matches first.**
 
 After manually reviewing and classifying customer records across multiple distributor workbooks, I developed a **Python/Pandas workflow in Jupyter Notebook** to consolidate the completed results, clean and organize the data, group match scores into meaningful ranges, and summarize mapping outcomes at scale.
 
-I then brought the Python-generated results into **Microsoft Excel and built PivotTables and performance analyses** to determine how matching success changed across **distributors, workbook types, score ranges, record volumes, and final mapping outcomes**.
+I then brought the Python-generated results into **Microsoft Excel**, where I built:
 
-The purpose went far beyond reporting historical results. The analysis showed **where the team's limited research time could produce the greatest return**, helping determine which portions of incoming monthly distributor data should be prioritized, how work could be distributed more efficiently across team members, and where low-yield manual research could be reduced.
+- 📊 **PivotTables**
+- 🧮 **Power Pivot / DAX measures**
+- 🎯 **Score-range performance analysis**
+- 📈 **Cumulative match-performance analysis**
+- 📦 **Distributor performance analysis**
+- 📑 **Worksheet performance analysis**
+- 🤖 **Automation / cumulative sweet-spot analysis**
 
-This was especially important because Solmetex was simultaneously dealing with a **historical customer-mapping backlog**. If incoming monthly records were not processed efficiently, they would simply become additional backlog—and those records become increasingly difficult to resolve as dental practices change ownership, relocate, close, change names, or transition to successor practices.
+The result was more than a historical report.
 
-Ultimately, the project connected technical analysis to a larger business objective:
+The project created a framework for determining **what type of work the team should expect each month, what should be worked first, where manual research adds the most value, how workload can be distributed more efficiently, and how far down the score distribution it makes sense to work based on available employee capacity.**
 
-> **Process monthly data more efficiently → save employee research time → prevent additional backlog → create capacity to resolve historical records → improve customer/account data → provide better information to Sales → support revenue-generating activity.**
+Ultimately, the project connected technical analysis to a larger operational objective:
+
+> ### **Process monthly data more efficiently → save employee research time → prevent additional backlog → create capacity to resolve historical records → improve customer/account data → provide better information to Sales → support revenue-generating activity.**
 
 ---
 
-## ⭐ Project Highlights
+# ⭐ Project Highlights
 
 - 🐍 Developed a **Python/Pandas workflow in Jupyter Notebook** to consolidate and analyze completed customer-matching results across multiple distributor workbooks.
-- 📊 Built **Excel PivotTables and performance analyses** to compare distributors, workbook types, score ranges, record volumes, and final mapping outcomes.
-- 🎯 Identified the **highest-value portions of the monthly workload**, giving the team a data-driven basis for deciding which records should receive attention first.
-- ⚡ Found that **scores from 40–80 captured 85.5% of Quick Matches while representing only 11.7% of evaluated records**.
-- 🔻 Found that **scores below 40 generated only 2.3% of Quick Matches**, highlighting a large portion of the workload with comparatively low Quick Match return.
-- 📦 Analyzed **distributor + workbook + score-range combinations** rather than relying on one universal threshold.
-- ⏱️ Created a framework for **reducing unnecessary manual research and allocating employee time toward higher-value work**.
-- 👥 Made the monthly workload easier to **prioritize and distribute across team members**, helping the same team process incoming records more efficiently.
-- 🗃️ Connected monthly efficiency directly to **backlog reduction**: completing current records faster helps prevent them from becoming future backlog while freeing time to research more difficult historical records.
-- 🤖 Identified areas where consistent historical matching performance could support **future automation opportunities**.
-- 💰 Connected data-team efficiency to downstream business value by improving the customer/account information available for **Sales targeting and revenue-generating outreach**.
+- 📊 Built **Excel PivotTables** to analyze performance across distributors, worksheets, score ranges, record volumes, and mapping outcomes.
+- 🧮 Created **Power Pivot / DAX measures** for Quick Match %, Manual Match %, Create New %, Not Mapped %, Total Match %, and cumulative performance.
+- 📈 Developed a **cumulative score-range analysis** to quantify the tradeoff between workload coverage and matching performance.
+- 📋 Analyzed **877 June 2026 records**, with **648 successfully matched — a 73.9% Total Match Rate**.
+- ⚡ Identified **302 Quick Matches (34.4%)** and **346 Manual Matches (39.5%)**.
+- 🎯 Found that scores from **50–80 covered only 38.1% of the workload while producing 309 successful matches at a 92.5% Total Match Rate**.
+- 📈 Expanding through **40–80 covered 53.6% of the workload while producing 398 successful matches at an 84.7% Total Match Rate**.
+- 📦 Found that the **five highest-volume distributors represented 720 of 877 records — approximately 82.1% of the analyzed workload**.
+- 📑 Identified meaningful differences between **Default D365, Historic, and In D365** record groups.
+- ⏱️ Created a framework for concentrating employee time on **higher-value work rather than treating every incoming record equally**.
+- 👥 Provided a method for **prioritizing and distributing work across team members** based on expected workload and historical results.
+- 🤖 Identified areas that could support **future automation or reduced manual intervention**.
+- 🗃️ Connected monthly efficiency directly to **preventing new backlog and creating capacity to resolve existing historical records**.
+- 💰 Connected improved customer/account information to downstream **Sales targeting and revenue-generating activity**.
 
 ---
 
-## 🌎 Overview
+# 🌎 Project Background
 
-Solmetex receives recurring customer data from dental distributors that must be **matched to existing customer accounts, manually researched, created as new accounts, or left unmapped when sufficient evidence cannot be found**.
+Solmetex receives recurring customer data from dental distributors that must be **matched to existing customer accounts, manually researched, created as new accounts, or classified as unmapped when sufficient evidence cannot be established**.
 
-Over several months, I manually reviewed distributor workbooks and classified thousands of customer records based on their final mapping outcomes. This created a historical dataset showing **what types of records the company receives, which records can be resolved efficiently, and where significant manual research is required**.
+Over several months, I worked directly with distributor workbooks and manually researched customer records to determine their appropriate mapping outcomes.
 
-I then developed a **Python/Pandas workflow in Jupyter Notebook** to consolidate the completed workbook data and transform months of manual review into structured summary data.
+This created a valuable historical dataset containing actual completed matching decisions.
 
-The Python output was brought into **Microsoft Excel**, where I created **PivotTables and performance analyses** across distributors, worksheet types, score ranges, record volumes, and mapping outcomes.
+At the same time, the organization was managing a **historical customer-mapping backlog**.
 
-The ultimate goal was not simply to report what had already happened. It was to use historical performance to develop a **repeatable strategy for handling incoming monthly distributor data more efficiently**, prevent additional backlog from accumulating, and create more team capacity to address Solmetex's more difficult historical customer-mapping backlog.
+The challenge was that the two problems were directly connected.
 
----
+If incoming monthly distributor records could not be processed efficiently, unfinished records would eventually become **additional backlog**.
 
-## 🎯 Objective
+The project therefore began with an important question:
 
-Determine **what types of customer records Solmetex should expect each month and how the team should prioritize and distribute that workload**.
-
-Rather than treating every incoming record equally, the project focused on answering:
-
-> **Which distributors, workbook types, and match-score ranges generate the greatest volume and strongest matching opportunities, and how can those patterns be used to process the monthly workload more efficiently?**
-
-The objective was to turn months of completed manual matching work into a **data-driven framework for deciding what should be worked first, where manual research provides value, and where automation or prioritization could save employee time.**
+> ### **Can historical matching results tell us where employee time should be spent so that recurring monthly work can be completed more efficiently?**
 
 ---
 
-## ❓ Business Challenge
+# ❓ Business Questions From Leadership
+
+The project originated from a request from leadership to determine how the role and process could become **more focused on data and business analysis while preventing manual mapping review from consuming all available time**.
+
+Data mapping remained foundational work and still needed to be completed.
+
+However, leadership wanted to identify opportunities to **speed up or remove stages that were consuming time without providing enough additional value**.
+
+The initial analysis needed to answer several specific business questions.
+
+---
+
+## 1️⃣ How Much of the Monthly Workload Can Be Completed Efficiently?
+
+The first question focused on **medium-to-high-quality potential matches below the existing 80 Match Score threshold**.
+
+Leadership wanted to understand:
+
+> **What percentage of the monthly workload consists of medium-to-high-quality records with one potential match but a Match Score below 80?**
+
+More practically:
+
+> **If the team starts with the highest scores and works downward, quickly completing records where additional research is unnecessary, what percentage of the total monthly workload can be covered?**
+
+This required measuring both:
+
+### **Workload Coverage**
+and
+### **Matching Success**
+
+---
+
+## 2️⃣ What Is the Yield From Lower-Quality Manual Review?
+
+The opposite side of the problem involved lower-quality potential matches where customer names were significantly different.
+
+The question was:
+
+> **When employees manually research lower-scoring records, what percentage are ultimately successfully mapped?**
+
+In practical terms:
+
+> **If the team works through X accounts within a lower score range, how many are successfully mapped and how much employee effort is required to achieve those additional matches?**
+
+This was essential because a large population of lower-scoring records could consume substantial employee time.
+
+Leadership needed evidence showing whether that additional effort was producing enough value to justify continuing deeper into the workload.
+
+---
+
+## 3️⃣ Which Portions of the Process Are Low-Yield?
+
+After the initial analysis, leadership expanded the requested metrics.
+
+The analysis needed to include:
+
+- 📊 **Records Processed**
+- ✅ **Records Matched**
+- 📈 **% Processed**
+- 🎯 **% Mapped**
+
+These metrics were intended to identify:
+
+> ### **Which portions of the matching process consume substantial effort while producing comparatively little successful output?**
+
+This shifted the project from simply measuring match rates to analyzing **process efficiency**.
+
+---
+
+## 4️⃣ Do Recent Records Behave Differently?
+
+Leadership also requested that the analysis be repeated specifically for **recent records**.
+
+**Earliest Invoice Date** was used as a proxy for separating the relevant recent/monthly population from older records.
+
+This was important because the goal was not simply to understand historical performance.
+
+The findings needed to help determine **how the team should approach the recurring distributor data arriving each month**.
+
+---
+
+# 🎯 Core Analytical Question
+
+Together, the leadership questions became a larger analytical problem:
+
+> ### **How far down the matching-score distribution should the team work before the additional employee time required begins producing diminishing returns?**
+
+Answering that required analyzing more than Match Score alone.
+
+The analysis needed to combine:
+
+**Match Score**  
++
+**Records Processed**  
++
+**Records Matched**  
++
+**Quick Match Yield**  
++
+**Manual Match Yield**  
++
+**Record Volume**  
++
+**Distributor**  
++
+**Worksheet Type**  
++
+**Final Mapping Outcome**
+
+The goal was to identify a practical balance between:
+
+> ### **Coverage + Successful Matching + Employee Time**
+
+---
+
+# 🎯 Project Objective
+
+The broader objective became determining:
+
+> ### **What types of customer records should the team expect each month, and how should those records be prioritized and distributed to complete the greatest amount of valuable work with the available employee time?**
+
+The project therefore focused on answering:
+
+- Which distributors generate the greatest monthly volume?
+- Which score ranges generate the strongest results?
+- Which records are most likely to Quick Match?
+- Where does manual research provide substantial additional value?
+- Which worksheet types behave differently?
+- Where does additional review begin producing diminishing returns?
+- What percentage of the workload can be completed at different score thresholds?
+- How should work be distributed across the team?
+- Which groups may support future automation?
+- How can the recurring workload be controlled before additional backlog accumulates?
+
+The objective was not simply to analyze what had already happened.
+
+> ### **It was to use historical work to improve how future work should be performed.**
+
+---
+
+# ❓ Business Challenge
 
 Solmetex was working through a **historical customer-mapping backlog** while continuing to receive new distributor data every month.
 
-This created two connected problems.
+This created two interconnected problems.
 
-### 📥 Recurring Monthly Data
+---
+
+## 📥 Recurring Monthly Workload
 
 New distributor records continuously needed to be:
 
@@ -81,64 +231,82 @@ New distributor records continuously needed to be:
 - ➕ **Created as new customer accounts**
 - ❌ **Classified as Not Mapped** when sufficient evidence could not be established
 
-Without an efficient process for handling the recurring monthly workload, unfinished records would simply become **additional backlog**.
+Every record requires some level of processing.
 
-### 🗃️ Historical Backlog
+If the team cannot efficiently complete the recurring monthly workload:
 
-The historical backlog was more difficult to resolve than current incoming records.
+**Monthly Records Arrive**  
+⬇️  
+**Records Require Review**  
+⬇️  
+**Employee Capacity Is Consumed**  
+⬇️  
+**Some Records Remain Unfinished**  
+⬇️  
+**Unfinished Records Become Additional Backlog**
 
-Older dental records may involve practices that have:
+---
+
+# 🗃️ Historical Customer-Mapping Backlog
+
+Historical records can be considerably more difficult to resolve than current records.
+
+Over time, dental practices may have:
 
 - 🏢 Changed ownership
 - 📍 Relocated
 - 🚪 Closed
-- 🦷 Been succeeded by another dentist or practice
+- 🦷 Transitioned to successor dentists or practices
 - 🔄 Changed business names
 - 🤝 Merged with another organization
-- 🏥 Begun sharing an address with another practice
+- 🏥 Shared an address with another dental practice
 - 📑 Accumulated duplicate or outdated customer information
 
-These records often require significantly more research because the business associated with an old transaction may no longer appear the same way today.
+A distributor record that may be relatively straightforward to research today can become substantially more complicated years later.
 
-This created the central operational problem:
+This created the central operational challenge:
 
-> **The team could not effectively reduce the historical backlog without first developing an efficient way to control the new distributor data arriving every month.**
+> ### **The historical backlog could not be efficiently reduced if unfinished monthly records continually created additional backlog.**
+
+The recurring workload therefore needed to be controlled before meaningful additional capacity could be dedicated to historical research.
 
 ---
 
-## 🔍 Step 1: Manual Customer Matching & Classification
+# 🔍 Step 1: Manual Customer Matching & Classification
 
-I spent several months working directly through distributor workbooks and researching customer records.
+I spent several months working directly through distributor workbooks and researching individual customer records.
 
-Each record had to be evaluated to determine whether the distributor customer corresponded to an existing Solmetex account.
+Each record had to be evaluated to determine whether the distributor customer corresponded to an existing Solmetex customer/account.
 
-The workflow tracked several important fields, including:
+The workflow tracked fields including:
 
 - ⚡ **Quick Match (Y/N)**
 - 🔍 **Manual Review Required (Y/N)**
 - ✅ **Manual Match (Y/N)**
 - 📋 **Final Mapping Status**
 - 🎯 **Match Score**
-- 📅 **Invoice / activity information**
+- 📅 **Earliest Invoice Date**
 - 📦 **Distributor**
 - 📑 **Worksheet / record type**
 
-The final mapping outcomes included:
+Final outcomes included:
 
 - ⚡ **Quick Match**
 - 🔍 **Manual Match**
 - ➕ **Create New**
 - ❌ **Not Mapped**
 
-This manual work created the historical foundation needed to understand **which types of records were actually producing successful mappings.**
+This manual work established the **ground truth for the analysis**.
+
+Instead of analyzing theoretical matching behavior, the project analyzed **actual outcomes from records that had already been reviewed and classified**.
 
 ---
 
-## 🐍 Step 2: Python & Jupyter Notebook Data Pipeline
+# 🐍 Step 2: Python & Jupyter Notebook Data Pipeline
 
-After completing the manual analysis, I developed a **Python workflow in Jupyter Notebook using Pandas** to consolidate and analyze the completed workbook results.
+After completing the manual review process, I developed a **Python workflow in Jupyter Notebook using Pandas**.
 
-Instead of manually counting outcomes across numerous worksheets, Python transformed the completed work into a structured analytical dataset.
+The purpose was to transform completed workbook results into a consolidated analytical dataset.
 
 ### Python/Pandas was used to:
 
@@ -146,141 +314,464 @@ Instead of manually counting outcomes across numerous worksheets, Python transfo
 - 🔗 Consolidate completed records into a unified dataset
 - 🧹 Clean and standardize fields
 - 🏷️ Interpret final mapping outcomes
-- 🎯 Convert individual match scores into defined score ranges
+- 🎯 Convert individual Match Scores into defined score ranges
 - ⚡ Count Quick Matches
 - 🔍 Count Manual Matches
 - ➕ Count Create New outcomes
 - ❌ Count Not Mapped outcomes
 - 📦 Group results by distributor
 - 📑 Group results by worksheet type
-- 📊 Generate summary datasets for further analysis
+- 📅 Support analysis of recent records
+- 📊 Generate structured summary data for further analysis
 
-This converted **months of individual manual decisions into structured data that could be analyzed at scale.**
-
----
-
-## 🎯 Step 3: Match-Score Range Analysis
-
-Individual customer records contained calculated match scores.
-
-Rather than evaluating thousands of individual scores independently, I grouped those scores into defined ranges so I could measure how mapping performance changed as scores decreased.
-
-This made it possible to compare:
-
-- 🎯 **Score Range**
-- 📊 **Number of Records**
-- ⚡ **Quick Matches**
-- 🔍 **Manual Matches**
-- ➕ **Create New**
-- ❌ **Not Mapped**
-- 📈 **Overall Match Performance**
-
-The purpose was to determine whether certain portions of the score distribution consistently produced more valuable results than others.
+Instead of manually counting results across numerous worksheets, Python converted **months of individual matching decisions into structured data that could be analyzed at scale**.
 
 ---
 
-## 📊 Step 4: Excel PivotTable Analysis
+# 🎯 Step 3: Match-Score Segmentation
 
-After Python generated the consolidated summary data, I transferred the output into **Microsoft Excel and built PivotTables** to make the results easier to analyze and communicate.
+Individual customer records contained calculated Match Scores.
 
-The PivotTables broke performance down across multiple dimensions, including:
+Rather than analyzing hundreds of individual score values independently, I grouped those scores into defined ranges:
 
-- 📦 **Distributor**
-- 📑 **Worksheet type**
-- 🎯 **Match-score range**
-- 📊 **Total records**
-- ⚡ **Quick Matches**
-- 🔍 **Manual Matches**
-- ➕ **Create New**
-- ❌ **Not Mapped**
-- 📈 **Match percentages**
-- 📋 **Final mapping outcomes**
+- **80–70**
+- **69–60**
+- **59–50**
+- **49–40**
+- **39–30**
+- **29–20**
+- **19–0**
 
-This allowed me to move beyond looking at individual customer records and instead evaluate the **performance of the entire matching workflow**.
+Each range could then be compared across:
 
----
+- 📊 Total Records
+- ⚡ Quick Matches
+- 🔍 Manual Matches
+- ➕ Create New
+- ❌ Not Mapped
+- 📈 Quick Match %
+- 📈 Manual Match %
+- 📈 Total Match %
 
-## 📈 Step 5: Distributor & Workbook Performance
-
-Not every distributor produced the same type, volume, or quality of data.
-
-Using the PivotTable analysis, I compared distributors and workbook types to determine:
-
-- 📦 Which sources generated the greatest record volume
-- ⚡ Which produced the strongest Quick Match results
-- 🔍 Which required heavier manual research
-- ❌ Which produced larger concentrations of Not Mapped records
-- 🎯 Which score ranges were most productive within each source
-
-This was important because a single universal score threshold would not necessarily represent every distributor equally.
-
-Instead, the analysis could identify **specific distributor + score-range combinations** that historically produced stronger results.
-
-This gave the team a clearer expectation of **what type and volume of work could arrive each month and how different distributor files should be approached.**
+This segmentation allowed the analysis to measure **how both matching performance and the type of employee effort required changed as Match Scores decreased**.
 
 ---
 
-## 🔥 Step 6: Identify the Highest-Value Work
+# 📊 Step 4: Excel PivotTable Analysis
 
-One of the most important outcomes was identifying **where employee time produced the greatest return**.
+After Python generated the consolidated dataset, I brought the results into **Microsoft Excel**.
 
-Rather than assigning equal attention to every record, the analysis showed that some portions of the workload contained a much greater concentration of successful matches.
+I created separate analytical views for:
 
-### 📊 Key Quantitative Findings
+- 📦 **Distributor Summary**
+- 📑 **Worksheet Summary**
+- 🎯 **Score-Range Summary**
+- 📈 **Cumulative Match Performance**
+- 🤖 **Automation / Cumulative Sweet Spots**
+- 📋 **Underlying Raw Data**
 
-> **Scores between 40–80 captured 85.5% of Quick Matches while representing only 11.7% of the evaluated records.**
+Using **PivotTables**, I could analyze the same underlying dataset from several operational perspectives.
 
-At the opposite end:
-
-> **Scores below 40 represented a much larger portion of the workload while producing only 2.3% of Quick Matches.**
-
-These results demonstrated that **record volume and record value were not distributed evenly throughout the workload**.
-
-A relatively targeted portion of the data contained the overwhelming majority of Quick Match opportunities, while substantial volumes of lower-scoring records produced comparatively little Quick Match value.
-
-That distinction matters operationally because every record researched requires employee time.
-
-The analysis therefore provided a quantitative basis for asking:
-
-> **Where can the team spend its next hour to complete the greatest amount of meaningful work?**
+This allowed the project to move beyond individual customer records and evaluate **how the overall matching process was performing**.
 
 ---
 
-## 🏆 Step 7: Prioritize Workbooks, Distributors & Score Ranges
+# 🧮 Step 5: Power Pivot & DAX Measures
 
-The analysis expanded beyond overall score performance to identify the **highest-value workbook/distributor and score-range combinations**.
+I created custom analytical measures using **Power Pivot / DAX**.
 
-Instead of approaching every monthly file the same way:
+Measures included:
+
+- ⚡ **Quick Match %**
+- 🔍 **Manual Match %**
+- ➕ **Create New %**
+- ❌ **Not Mapped %**
+- ✅ **Total Match %**
+- 📊 **Cumulative Total Records**
+- 🎯 **Cumulative Total Matches**
+- 📈 **Cumulative Total Match %**
+
+The cumulative measures were especially important because they allowed me to compare:
+
+> **How much of the workload the team reviews**
+
+against
+
+> **How much successful matching value that workload produces**
+
+This transformed the analysis from a descriptive report into a **workload-prioritization tool**.
+
+---
+
+# 🔥 Key Findings
+
+The June 2026 analysis contained:
+
+## **877 Total Records**
+
+Of those records:
+
+- ✅ **648 were successfully matched**
+- 📈 **73.9% Total Match Rate**
+- ⚡ **302 were Quick Matches**
+- 📈 **34.4% Quick Match Rate**
+- 🔍 **346 were Manual Matches**
+- 📈 **39.5% Manual Match Rate**
+- ➕ **19.2% resulted in Create New**
+- ❌ **7.0% remained Not Mapped**
+
+One of the most important findings was the contribution of manual research.
+
+Quick Match successfully resolved **34.4% of the total dataset**, while manual research contributed another **39.5% of all records as successful Manual Matches**.
+
+This demonstrated that manual review was not simply additional administrative effort.
+
+> ### **Manual research was responsible for a substantial portion of successful customer mapping.**
+
+The business question therefore became:
+
+> ### **Where should that valuable but time-intensive manual research be concentrated?**
+
+---
+
+# 🎯 Score-Range Performance
+
+Matching behavior changed substantially as scores decreased.
+
+| Score Range | Records | Quick Match % | Manual Match % | Total Match % | Create New % | Not Mapped % |
+|---|---:|---:|---:|---:|---:|---:|
+| **80–70** | 141 | **87.2%** | 10.6% | **97.9%** | 1.4% | 0.7% |
+| **69–60** | 98 | **77.6%** | 12.2% | **89.8%** | 4.1% | 6.1% |
+| **59–50** | 95 | **58.9%** | 28.4% | **87.4%** | 7.4% | 5.3% |
+| **49–40** | 136 | 22.1% | **43.4%** | 65.4% | 27.9% | 6.6% |
+| **39–30** | 261 | 5.4% | **54.8%** | 60.2% | 29.9% | 10.0% |
+| **29–20** | 132 | 1.5% | **61.4%** | 62.9% | 26.5% | 10.6% |
+| **19–0** | 14 | 7.1% | **64.3%** | 71.4% | 28.6% | 0.0% |
+
+---
+
+# 🔎 What the Score Ranges Revealed
+
+The score ranges did more than indicate whether a record might eventually be matched.
+
+They helped indicate **what type of work the record was likely to require**.
+
+---
+
+## ⚡ Higher Scores → Quick-Match Heavy
+
+### 80–70
+
+- ⚡ Quick Match: **87.2%**
+- 🔍 Manual Match: **10.6%**
+- ✅ Total Match: **97.9%**
+
+### 69–60
+
+- ⚡ Quick Match: **77.6%**
+- 🔍 Manual Match: **12.2%**
+- ✅ Total Match: **89.8%**
+
+These records represented strong opportunities for efficiently completing substantial amounts of successful matching work.
+
+---
+
+## 🔄 Middle Scores → Transition Toward Manual Research
+
+### 59–50
+
+- ⚡ Quick Match: **58.9%**
+- 🔍 Manual Match: **28.4%**
+- ✅ Total Match: **87.4%**
+
+### 49–40
+
+- ⚡ Quick Match: **22.1%**
+- 🔍 Manual Match: **43.4%**
+- ✅ Total Match: **65.4%**
+
+The nature of the work changed substantially around these ranges.
+
+Quick Matches became less common while manual research became increasingly important.
+
+---
+
+## 🔍 Lower Scores → Manual-Research Heavy
+
+### 39–30
+
+- ⚡ Quick Match: only **5.4%**
+- 🔍 Manual Match: **54.8%**
+- ✅ Total Match: **60.2%**
+
+### 29–20
+
+- ⚡ Quick Match: only **1.5%**
+- 🔍 Manual Match: **61.4%**
+- ✅ Total Match: **62.9%**
+
+This answered an important part of leadership's original question.
+
+Lower scores produced **very few Quick Matches**, but manual research continued to recover a meaningful number of successful mappings.
+
+The finding was therefore more nuanced than:
+
+> **"Low scores are not worth reviewing."**
+
+Instead:
+
+> ### **Lower scores represent a different, substantially more research-intensive type of work.**
+
+That distinction is important when deciding how employee time should be allocated.
+
+---
+
+# 📈 Cumulative "Sweet Spot" Analysis
+
+I used DAX measures to evaluate cumulative performance as progressively lower score ranges were included.
+
+| Scores Included | % of Records Covered | Total Matches | Total Match Rate |
+|---|---:|---:|---:|
+| **80–70** | 16.1% | 138 | **97.9%** |
+| **80–60** | 27.3% | 226 | **94.6%** |
+| **80–50** | 38.1% | 309 | **92.5%** |
+| **80–40** | 53.6% | 398 | **84.7%** |
+| **80–30** | 83.4% | 555 | **75.9%** |
+| **80–20** | 98.4% | 638 | **73.9%** |
+| **80–0** | 100.0% | 648 | **73.9%** |
+
+---
+
+# ⭐ Major Efficiency Finding
+
+One of the strongest findings was the relationship between **workload coverage and matching success**.
+
+> ### **Scores from 50–80 represented only 38.1% of the total workload while producing 309 successful matches at a 92.5% Total Match Rate.**
+
+If additional coverage was desired:
+
+> ### **Expanding through scores 40–80 covered 53.6% of all records while producing 398 successful matches at an 84.7% Total Match Rate.**
+
+This provided leadership with measurable options.
+
+### Prioritize 50–80
+
+**38.1% of workload**  
+→ **309 matches**  
+→ **92.5% Total Match Rate**
+
+### Expand Through 40
+
+**53.6% of workload**  
+→ **398 matches**  
+→ **84.7% Total Match Rate**
+
+### Expand Through 30
+
+**83.4% of workload**  
+→ **555 matches**  
+→ **75.9% Total Match Rate**
+
+Instead of simply saying:
+
+> **"Higher scores perform better."**
+
+the analysis could answer:
+
+> ### **"If we increase the amount of work reviewed, how much additional coverage and matching output do we gain, and what happens to overall efficiency?"**
+
+This became the basis of the project's **cumulative sweet-spot analysis**.
+
+---
+
+# ✅ Answering Leadership Question #1
+
+Leadership initially asked what percentage of the monthly workload could be handled by **starting with the strongest matches and working downward**.
+
+The analysis provided a quantitative answer.
+
+A team could address:
+
+> **38.1% of the workload by reviewing scores from 50–80 while maintaining a 92.5% Total Match Rate.**
+
+Or, if additional capacity was available:
+
+> **53.6% of the workload could be covered by expanding through scores 40–80 while maintaining an 84.7% Total Match Rate.**
+
+Rather than choosing an arbitrary threshold, leadership could evaluate the tradeoff between **coverage and expected matching performance**.
+
+---
+
+# ✅ Answering Leadership Question #2
+
+Leadership also asked about the yield from lower-quality records.
+
+The analysis showed that Quick Match performance dropped sharply:
+
+- **80–70:** 87.2%
+- **69–60:** 77.6%
+- **59–50:** 58.9%
+- **49–40:** 22.1%
+- **39–30:** 5.4%
+- **29–20:** 1.5%
+
+However, Manual Match performance moved in the opposite direction:
+
+- **80–70:** 10.6%
+- **69–60:** 12.2%
+- **59–50:** 28.4%
+- **49–40:** 43.4%
+- **39–30:** 54.8%
+- **29–20:** 61.4%
+
+This showed that lower-score records were not necessarily worthless.
+
+They were **more expensive in employee research time because successful outcomes increasingly depended on manual investigation rather than Quick Match**.
+
+That distinction gave leadership better information for deciding **when and where deeper research should be performed**.
+
+---
+
+# 📦 Distributor Performance
+
+The analysis also revealed substantial differences in both **record volume and matching behavior across distributors**.
+
+| Distributor | Records | Total Matches | Quick Match % | Manual Match % | Total Match % |
+|---|---:|---:|---:|---:|---:|
+| **Frontier Dental - USA** | 220 | 165 | 27.7% | 47.3% | 75.0% |
+| **Henry Schein Dental** | 190 | 136 | 31.6% | 40.0% | 71.6% |
+| **Benco Dental Company** | 123 | 92 | 39.8% | 35.0% | 74.8% |
+| **Patterson Dental Supply - USA** | 121 | 84 | 40.5% | 28.9% | 69.4% |
+| **Dental City** | 66 | 50 | 42.4% | 33.3% | 75.8% |
+| **DC Dental** | 40 | 32 | 27.5% | 52.5% | 80.0% |
+| **Safco Dental** | 31 | 25 | 35.5% | 45.2% | 80.6% |
+| **Dental Health Products** | 30 | 25 | 43.3% | 40.0% | **83.3%** |
+
+---
+
+# 📦 Top 5 Monthly Workload Sources
+
+The five largest distributors were:
+
+1. **Frontier Dental - USA — 220 records**
+2. **Henry Schein Dental — 190 records**
+3. **Benco Dental Company — 123 records**
+4. **Patterson Dental Supply - USA — 121 records**
+5. **Dental City — 66 records**
+
+Together:
+
+> ### **720 of 877 records — approximately 82.1% of the entire analyzed workload — came from only five distributors.**
+
+Frontier Dental - USA alone represented:
+
+> **25.1% of all analyzed records.**
+
+This finding has important workload-planning implications.
+
+The monthly process did not consist of evenly distributed work across every distributor.
+
+Instead, a relatively small number of distributors generated the overwhelming majority of the volume.
+
+That means team capacity can be planned around the sources that historically create most of the work.
+
+---
+
+# 🏆 Distributor Matching Findings
+
+Among distributors with at least 30 records:
+
+- 🥇 **Dental Health Products:** 83.3% Total Match Rate
+- **Safco Dental:** 80.6%
+- **DC Dental:** 80.0%
+- **Dental City:** 75.8%
+- **Frontier Dental - USA:** 75.0%
+- **Benco Dental Company:** 74.8%
+- **Henry Schein Dental:** 71.6%
+- **Patterson Dental Supply - USA:** 69.4%
+
+Manual Match contribution also varied substantially:
+
+- 🔍 **DC Dental:** 52.5%
+- 🔍 **Frontier Dental - USA:** 47.3%
+- 🔍 **Safco Dental:** 45.2%
+- 🔍 **Henry Schein Dental:** 40.0%
+
+This demonstrated why **one universal rule should not necessarily be applied to every distributor**.
+
+The optimal workflow needed to consider:
+
+> **Distributor + Score Range + Record Volume + Historical Outcome**
+
+---
+
+# 📑 Worksheet Performance
+
+The 877 records were also segmented by worksheet type.
+
+| Worksheet | Records | Quick Match % | Manual Match % | Total Match % | Create New % | Not Mapped % |
+|---|---:|---:|---:|---:|---:|---:|
+| **Default D365** | 427 | 34.0% | 35.8% | 69.8% | 24.4% | 5.9% |
+| **Historic** | 180 | **40.6%** | 35.6% | 76.1% | 13.3% | 10.6% |
+| **In D365** | 270 | 31.1% | **47.8%** | **78.9%** | 14.8% | 6.3% |
+
+### Key Findings
+
+- 🏆 **In D365 achieved the highest Total Match Rate at 78.9%** — 213 of 270 records successfully matched.
+- 🔍 **In D365 had the highest Manual Match Rate at 47.8%**, showing the significant contribution of manual research within this group.
+- ⚡ **Historic achieved the highest Quick Match Rate at 40.6%** — 73 of 180 records.
+- 📦 **Default D365 represented 427 records — 48.7% of the entire workload**.
+- ➕ **Default D365 had the highest Create New rate at 24.4%**.
+
+Worksheet type therefore provided another indicator of **what kind of work employees should expect before beginning individual record research**.
+
+---
+
+# 🏆 Creating a Monthly Prioritization Strategy
+
+Combining all dimensions created a stronger framework than using Match Score alone.
+
+The analysis could consider:
+
+### **Distributor**
++
+### **Worksheet Type**
++
+### **Score Range**
++
+### **Record Volume**
++
+### **Historical Match Performance**
+
+Instead of:
 
 > **Receive File → Start at the Top → Review Everything Equally**
 
-The process could become:
+the process could become:
 
-> **Receive File → Identify Distributor/Workbook → Evaluate Score Range → Prioritize Historically Productive Segments → Distribute Work Across the Team**
+> **Receive File → Identify Distributor → Identify Worksheet → Evaluate Score Range → Prioritize Historically Productive Segments → Assign Appropriate Work → Distribute Across Team**
 
-This created a much more strategic approach to the monthly workload.
+This gives the team a better understanding of:
 
-The historical analysis could help the team understand:
-
-- 📦 **Which distributor files deserve immediate attention**
-- 🎯 **Which score ranges should be tackled first**
-- 📊 **How much work is likely to fall into each category**
-- ⚡ **Where Quick Matches are most concentrated**
-- 🔍 **Where manual research is likely to provide value**
-- ⏱️ **Where significant employee time may produce limited matching return**
-- 👥 **How work can be divided across team members more efficiently**
-
-Rather than simply knowing how the previous month's files performed, the team could use historical patterns to establish **expectations and priorities for future incoming files.**
+- 🎯 **What should be worked first**
+- 📦 **Where most of the volume is coming from**
+- ⚡ **Where Quick Matches are concentrated**
+- 🔍 **Where manual research contributes the most**
+- ➕ **Where Create New outcomes are more common**
+- 👥 **How work can be distributed across employees**
+- ⏱️ **Where limited employee time is likely to produce the greatest return**
 
 ---
 
-## ⚙️ Step 8: Identify Automation Opportunities
+# ⚙️ Automation Opportunities
 
-The project also helped identify portions of the matching process that could potentially support greater automation.
+The project also helped identify areas where the matching workflow could potentially support greater automation.
 
-By combining:
+Instead of assuming one score threshold should work everywhere, potential automation opportunities could be evaluated using:
 
 **Distributor**  
++
+**Worksheet Type**  
 +
 **Score Range**  
 +
@@ -288,92 +779,107 @@ By combining:
 +
 **Historical Match Performance**
 
-I could identify groups where matching behavior was consistently strong.
+Groups with consistently strong historical performance and sufficient record volume could be investigated as stronger candidates for automated handling or reduced manual intervention.
 
-Minimum-record safeguards were also considered so that extremely small samples would not incorrectly appear to represent reliable automation opportunities.
+Minimum-record safeguards were also considered so that very small sample sizes would not incorrectly appear to represent reliable automation opportunities.
 
-This created a more targeted framework for evaluating automation rather than assuming that **one score threshold should apply to every distributor and every record type.**
+This created a framework for distinguishing between:
 
-The analysis could therefore help distinguish between:
-
-- 🤖 Records potentially suitable for greater automation
-- 👤 Records where human review remained valuable
-- 🔍 Records requiring deeper manual research
-- ⏱️ Records where extensive research historically produced limited return
+- 🤖 **Potential automation candidates**
+- ⚡ **High-confidence Quick Match groups**
+- 👤 **Records where human review adds substantial value**
+- 🔍 **Research-heavy record groups**
+- ⏱️ **Areas where additional manual effort may produce diminishing returns**
 
 ---
 
-## ⏱️ Time & Efficiency Impact
+# ⏱️ Time & Efficiency Impact
 
-The core business value of the project was **time efficiency**.
+The central business resource being optimized was **employee time**.
 
-Customer matching requires employee research time, and that time is limited.
+Customer matching requires research, judgment, and manual effort.
 
-If several team members spend significant portions of their day researching records that historically produce very few successful matches, that time cannot simultaneously be spent on:
+Every hour spent on one portion of the dataset is an hour that cannot simultaneously be spent on:
 
-- Higher-probability customer matches
-- More valuable manual-review opportunities
-- Incoming monthly records
-- Difficult historical records
+- High-probability matches
+- Productive manual-review groups
+- Current monthly records
+- Historical backlog research
 - Other data-quality responsibilities
 
-The analysis created a way to use historical results to determine **where employee time should be concentrated.**
+The analysis made those tradeoffs visible.
 
-### ❌ Before
+---
+
+## ❌ Traditional Approach
 
 **Incoming Distributor Data**  
 ⬇️  
 **Large Volume of Records**  
 ⬇️  
-**Significant Manual Review**  
+**Work Through Records With Limited Prioritization**  
 ⬇️  
-**Employee Research Time Consumed**  
+**Significant Employee Research Time**  
 ⬇️  
-**Unfinished Records Remain**  
+**Incomplete Monthly Work**  
 ⬇️  
-**Records Become Additional Backlog**
+**Additional Backlog**
 
-### ✅ Data-Driven Approach
+---
+
+## ✅ Data-Driven Approach
 
 **Incoming Distributor Data**  
 ⬇️  
-**Identify Distributor / Workbook**  
+**Identify High-Volume Distributors**  
 ⬇️  
-**Apply Historical Score-Range Findings**  
+**Identify Worksheet Type**  
 ⬇️  
-**Prioritize Highest-Value Records**  
+**Apply Score-Range Performance**  
 ⬇️  
-**Distribute Work More Efficiently Across the Team**  
+**Prioritize Highest-Value Segments**  
 ⬇️  
-**Reduce Low-Yield Research**  
+**Assign Work Based on Expected Research Requirements**  
 ⬇️  
-**Complete More Monthly Work in the Available Time**  
+**Distribute Work More Efficiently Across Team Members**  
 ⬇️  
-**Create Capacity for Historical Backlog**
+**Complete More Meaningful Work in Available Time**  
+⬇️  
+**Prevent Additional Backlog**
 
-### ⏱️ Why Time Matters
+---
 
-In this workflow, **employee time has direct business value**.
+# 💡 Time Is a Business Resource
 
 The goal was not simply to make an Excel report faster.
 
 The goal was to make the **people performing the actual work more efficient**.
 
-If historical data can identify which records are most likely to produce meaningful results, team members can spend less time repeatedly researching low-yield portions of the workload and more time completing work that moves the process forward.
+The cumulative analysis quantified the tradeoff.
 
-That means:
+For example:
 
-> **Less unnecessary research + better prioritization + smarter workload distribution = more completed work from the same available employee hours.**
+> ### **38.1% of the workload produced 309 matches at a 92.5% Total Match Rate.**
+
+Expanding through the next score range:
+
+> ### **53.6% of the workload produced 398 matches at an 84.7% Total Match Rate.**
+
+That information allows the business to make a more informed decision about **how much employee time should be committed to progressively more research-intensive portions of the workload**.
+
+In practical terms:
+
+> ### **Better prioritization + less unnecessary research + smarter workload distribution = more completed work from the same available employee hours.**
 
 ---
 
-## 🗃️ Backlog Reduction Strategy
+# 🗃️ Backlog Reduction Strategy
 
-The monthly workflow and historical backlog were directly connected.
+Monthly workload efficiency and historical backlog reduction were directly connected.
 
-Every month that incoming distributor records were not completed created **additional records that would eventually require historical research**.
+Every month that incoming distributor records remained unresolved created **additional records that could eventually require historical research**.
 
-Those records could become more difficult over time because:
+Those records can become increasingly difficult over time because:
 
 - 🏢 Ownership changes
 - 🔄 Practice names change
@@ -381,65 +887,97 @@ Those records could become more difficult over time because:
 - 👨‍⚕️ New dentists take over practices
 - 📍 Businesses relocate
 - 🚪 Practices close
-- 🏥 Multiple businesses occupy the same address
-- 📑 Customer records become outdated
+- 🏥 Multiple practices occupy the same address
+- 📑 Customer information becomes outdated
 - 🔁 Duplicate accounts accumulate
 
-A customer relationship that may be relatively straightforward to identify today can become substantially harder to reconstruct years later.
+Therefore, improving the monthly process accomplishes two goals.
 
-Therefore, improving the monthly process did more than make the current month's work faster.
+## 1️⃣ Prevent New Backlog
 
-It helped accomplish **two goals at the same time**:
+Process a greater portion of current distributor data while the information is still relatively current.
 
-### 1️⃣ Prevent the backlog from continuing to grow
+## 2️⃣ Reduce Existing Backlog
 
-Process a greater portion of current distributor data before those unresolved records become future historical research.
+Use capacity created through better prioritization and efficiency to investigate older, more complicated records.
 
-### 2️⃣ Create capacity to reduce the existing backlog
-
-Time saved through better prioritization can be redirected toward the older records that require deeper investigation.
-
-This is why controlling the monthly workload was essential to addressing the larger historical problem.
+The monthly process therefore acts as the **front line of backlog prevention**.
 
 ---
 
-## 🔄 Operational Impact
+# 🔮 Next Analytical Phase
 
-The complete workflow created a chain of operational improvements:
+The efficiency analysis was also intended to create capacity for a larger data-quality initiative involving the existing mapped-record population.
 
+Leadership outlined a future process for evaluating the quality and continued relevance of a much larger population of **140,000+ previously mapped records**.
+
+The proposed analytical workflow included:
+
+1. 📥 Reading the **customer matrix from the ERP (F&O)**
+2. 🔗 Joining it with the **Retail dataset** to identify addresses and customer names associated with distributor customer numbers
+3. 🔗 Joining with the **Customer table** to retrieve the most recent customer name and address
+4. 🧩 Segmenting customers into quality groups such as:
+   - Single customer name / single address
+   - Multiple customer names
+   - Multiple addresses
+   - Other potentially inconsistent relationships
+5. 🎯 Using those groups to evaluate the quality and continued relevance of historical mappings
+
+The immediate project therefore had a larger strategic purpose:
+
+> ### **Reduce the amount of employee time consumed by recurring manual mapping so additional analytical capacity can be redirected toward larger-scale customer-data quality and backlog initiatives.**
+
+---
+
+# 🔄 Operational Impact
+
+The complete analytical process created the following chain:
+
+**Leadership Identifies Manual-Mapping Efficiency Problem**  
+⬇️  
+**Define Business Questions**  
+⬇️  
 **Months of Manual Matching Results**  
 ⬇️  
-**Python/Pandas Consolidation in Jupyter Notebook**  
+**Python/Pandas Consolidation**  
+⬇️  
+**Jupyter Notebook Data Processing**  
 ⬇️  
 **Structured Analytical Dataset**  
 ⬇️  
-**Excel PivotTable Analysis**  
+**Excel PivotTables**  
 ⬇️  
-**Distributor + Workbook + Score-Range Performance**  
+**Power Pivot / DAX Measures**  
+⬇️  
+**Score-Range Performance Analysis**  
+⬇️  
+**Cumulative Sweet-Spot Analysis**  
+⬇️  
+**Distributor + Worksheet + Score-Range Findings**  
 ⬇️  
 **Identify Highest-Value Monthly Work**  
 ⬇️  
-**Prioritize & Distribute Team Work More Efficiently**  
+**Prioritize & Distribute Work Across the Team**  
 ⬇️  
-**Reduce Time Spent on Low-Yield Research**  
+**Reduce Low-Yield / Unnecessary Research**  
 ⬇️  
-**Complete More Incoming Monthly Records**  
+**Complete More Incoming Records**  
 ⬇️  
 **Prevent Additional Backlog**  
 ⬇️  
-**Free Employee Capacity**  
+**Create Employee Capacity**  
 ⬇️  
-**Resolve More Difficult Historical Records**
+**Address More Difficult Historical Data Problems**
 
 ---
 
-## 💰 Downstream Business Impact
+# 💰 Downstream Business Impact
 
 Customer matching is not simply a data-cleaning exercise.
 
-The matching process helps establish **which customer, dental practice, dentist, or organization is associated with distributor activity**.
+The process helps establish **which customer, dental practice, dentist, or organization is associated with distributor activity**.
 
-Improving that information creates a downstream chain:
+Improving that information creates value beyond the immediate data team.
 
 **More Accurate Customer Matching**  
 ⬇️  
@@ -447,28 +985,32 @@ Improving that information creates a downstream chain:
 ⬇️  
 **Better Understanding of Customer Activity**  
 ⬇️  
-**More Useful Information for Sales**  
+**More Reliable Information for Downstream Teams**  
 ⬇️  
 **Sales Can Better Identify Appropriate Customers to Contact**  
 ⬇️  
 **More Focused Revenue-Generating Outreach**
 
-The project's value therefore extends beyond the immediate data workflow.
+Saving employee research time therefore has a compounding effect.
 
-> **Saving employee research time allows more records to be processed, reduces unnecessary manual effort, creates capacity for backlog reduction, improves customer information, and supports the teams that use that information for business activity.**
+> **The same team can process more meaningful records, reduce unnecessary research, prevent additional backlog, create capacity for historical research, improve customer information, and support the teams that use that information for business activity.**
 
-In essence, **time saved in the data process creates capacity elsewhere in the organization.**
+In essence:
+
+> ### **Time saved in the data process creates capacity and value elsewhere in the organization.**
 
 ---
 
-## 🛠️ Key Skills Demonstrated
+# 🛠️ Key Skills Demonstrated
 
 - 🐍 **Python**
 - 🐼 **Pandas**
 - 📓 **Jupyter Notebook**
-- 📊 **Microsoft Excel**
+- 📊 **Advanced Microsoft Excel**
 - 📈 **PivotTables**
-- 🧮 **Advanced Excel Analysis**
+- 🧮 **Power Pivot**
+- 📐 **DAX Measures**
+- 📈 **Cumulative Performance Analysis**
 - 📂 **Multi-Workbook Data Consolidation**
 - 🧹 **Data Cleaning & Transformation**
 - 🔗 **Entity Resolution / Customer Matching**
@@ -477,12 +1019,15 @@ In essence, **time saved in the data process creates capacity elsewhere in the o
 - ⚙️ **Workflow Optimization**
 - 🤖 **Automation Opportunity Analysis**
 - 🔍 **Manual Data Validation**
+- ⏱️ **Operational Efficiency Analysis**
 - 🧠 **Root-Cause Analysis**
 - 💡 **Business Process Analysis**
+- 📋 **Requirements Translation**
+- 🎯 **Data-Driven Decision Support**
 
 ---
 
-## 💻 Tools Used
+# 💻 Tools Used
 
 | Tool | Application |
 |---|---|
@@ -490,13 +1035,17 @@ In essence, **time saved in the data process creates capacity elsewhere in the o
 | **Pandas** | Workbook consolidation, cleaning, grouping, and aggregation |
 | **Jupyter Notebook** | Python development and analytical workflow |
 | **Microsoft Excel** | Analysis, reporting, and presentation |
-| **PivotTables** | Distributor, workbook, score-range, and outcome analysis |
-| **Excel Formulas** | Classification, calculations, and workflow metrics |
+| **PivotTables** | Distributor, worksheet, score-range, and outcome analysis |
+| **Power Pivot** | Data-model calculations and analytical measures |
+| **DAX** | Match-rate and cumulative-performance measures |
+| **Excel Formulas** | Classification, calculations, and supporting workflow metrics |
 
 ---
 
-## 📌 Project Architecture
+# 📌 Project Architecture
 
+**Business Questions From Leadership**  
+⬇️  
 **Manual Distributor Review**  
 ⬇️  
 **Classify Mapping Outcomes**  
@@ -513,11 +1062,19 @@ In essence, **time saved in the data process creates capacity elsewhere in the o
 ⬇️  
 **Calculate Mapping Outcomes**  
 ⬇️  
-**Generate Summary Data**  
+**Generate Structured Data**  
 ⬇️  
-**Excel PivotTables**  
+**Microsoft Excel**  
 ⬇️  
-**Distributor / Workbook / Score Analysis**  
+**PivotTables**  
+⬇️  
+**Power Pivot / DAX Measures**  
+⬇️  
+**Cumulative Sweet-Spot Analysis**  
+⬇️  
+**Distributor / Worksheet / Score Analysis**  
+⬇️  
+**Answer Leadership's Business Questions**  
 ⬇️  
 **Identify Monthly Work Priorities**  
 ⬇️  
@@ -525,28 +1082,77 @@ In essence, **time saved in the data process creates capacity elsewhere in the o
 ⬇️  
 **Prevent Additional Backlog**  
 ⬇️  
-**Create Capacity for Historical Backlog Reduction**
+**Create Capacity for Larger Data-Quality Initiatives**
 
 ---
 
-## ✅ Outcome
+# ✅ Outcome
 
-This project transformed **several months of manual customer-matching work into a repeatable analytical framework for managing Solmetex's recurring distributor data.**
+This project transformed **several months of manual customer-matching work into a repeatable analytical framework for managing recurring distributor data**.
 
-Using **Python and Pandas in Jupyter Notebook**, I consolidated completed workbook results and converted thousands of individual record-level decisions into structured summary data that could be analyzed at scale.
+More importantly, it began with **specific business questions from leadership**:
 
-Using **Excel PivotTables**, I analyzed the results across distributors, workbook types, score ranges, record volumes, and final mapping outcomes to identify **where successful matches were concentrated and where employee research time was producing limited returns**.
+> **How much of the monthly workload can be completed efficiently by starting with stronger potential matches?**
 
-The analysis produced measurable findings—including the discovery that **40–80 score records captured 85.5% of Quick Matches while representing only 11.7% of evaluated records**, compared with only **2.3% of Quick Matches coming from scores below 40**.
+> **What is the actual yield from researching lower-quality matches?**
 
-But the most important outcome went beyond those individual percentages.
+> **Which portions of the process are low-yield?**
 
-The project established a method for identifying the **highest-priority distributors, workbooks, and score ranges each month**, giving the team a framework for deciding **what to work first, what results to expect, and how to distribute the workload more efficiently across available employees**.
+> **How can employee time be freed for backlog reduction and larger customer-data quality initiatives?**
 
-That efficiency creates a much larger business chain:
+Using **Python and Pandas in Jupyter Notebook**, I consolidated completed workbook results and converted individual record-level decisions into structured data that could be analyzed at scale.
 
-> ### **Handle incoming monthly data faster → save employee time → prevent new backlog → free capacity → attack the existing historical backlog → improve customer data → provide better information to Sales → support revenue-generating activity.**
+Using **Excel PivotTables, Power Pivot, and custom DAX measures**, I analyzed those results across distributors, worksheet types, score ranges, record volumes, final mapping outcomes, and cumulative performance.
 
-Rather than using Python and Excel simply to describe historical performance, this project used **data to improve how future work could be performed**.
+The analysis demonstrated that **877 monthly records were not 877 equal pieces of work**.
 
-It demonstrates how **Python automation, Pandas data transformation, Jupyter Notebook analysis, Excel PivotTables, operational knowledge, and business reasoning** can be combined to turn months of manual work into a practical strategy for improving an ongoing business process.
+Different portions of the dataset had dramatically different:
+
+- Record volumes
+- Quick Match rates
+- Manual Match rates
+- Total Match rates
+- Research requirements
+- Potential value per employee hour
+
+The cumulative analysis quantified those tradeoffs.
+
+> ### **Scores from 50–80 covered only 38.1% of the workload while producing 309 successful matches at a 92.5% Total Match Rate.**
+
+> ### **Expanding through 40–80 covered 53.6% of the workload while producing 398 successful matches at an 84.7% Total Match Rate.**
+
+Distributor analysis showed that:
+
+> ### **The five highest-volume distributors accounted for approximately 82.1% of the entire analyzed workload.**
+
+Worksheet analysis showed additional differences:
+
+- **In D365:** highest Total Match Rate at **78.9%**
+- **Historic:** highest Quick Match Rate at **40.6%**
+- **Default D365:** **48.7% of the entire workload**
+
+The score analysis also revealed an important operational distinction:
+
+> ### **As scores decreased, Quick Match success declined dramatically while successful outcomes became increasingly dependent on manual research.**
+
+That meant the analysis did not simply identify which records were "good" or "bad."
+
+It identified **different types of work and the employee effort associated with them**.
+
+The resulting framework could help determine:
+
+- 🎯 **What should be worked first**
+- 📦 **Where most monthly volume is coming from**
+- ⚡ **Which records can likely be completed quickly**
+- 🔍 **Where manual research contributes substantial value**
+- 📈 **How much additional coverage is gained by expanding the review threshold**
+- ⏱️ **Where additional research begins producing diminishing returns**
+- 👥 **How work can be distributed more intelligently across the team**
+- 🤖 **Where automation may provide additional value**
+- 🗃️ **How monthly efficiency can create capacity for backlog reduction**
+
+Most importantly, the project connected the original leadership questions to a measurable operational strategy:
+
+> ### **Business Question → Historical Data → Python/Pandas → Excel PivotTables → Power Pivot/DAX → Quantified Findings → Work Prioritization → Time Savings → Backlog Capacity → Better Customer Data → Downstream Business Value**
+
+Rather than using analytics simply to describe what had already happened, this project used **Python, Pandas, Jupyter Notebook, Excel PivotTables, Power Pivot, DAX, and business analysis to answer leadership's questions and determine how future work could be performed more efficiently.**
