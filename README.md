@@ -1,8 +1,8 @@
-# 📊 Python & Excel – Distributor Data Matching & Workflow Optimization
+# 📊 Python, Excel & Power BI – Distributor Data Matching & Workflow Optimization
 
-### *Python, Pandas, Jupyter Notebook, Excel PivotTables, Power Pivot & DAX Business Analytics Project*
+### *Python, Pandas, Jupyter Notebook, Excel PivotTables, Power Pivot, DAX & Power BI Business Analytics Project*
 
-> **Transforming months of manual customer-matching data into a data-driven strategy for prioritizing monthly workloads, improving team efficiency, identifying automation opportunities, and creating capacity to reduce a complex historical customer-mapping backlog.**
+> **Transforming months of manual customer-matching data into a data-driven strategy for prioritizing monthly workloads, improving team efficiency, identifying automation opportunities, reducing backlog growth, and delivering Power BI reporting to support operational decision-making.**
 
 ---
 
@@ -24,9 +24,16 @@ I then brought the Python-generated results into **Microsoft Excel**, where I bu
 - 📑 **Worksheet performance analysis**
 - 🤖 **Automation / cumulative sweet-spot analysis**
 
-The result was more than a historical report.
+I then developed a **Microsoft Power BI dashboard** to transform the underlying analysis into an interactive business-intelligence and reporting layer focused on:
 
-The project created a framework for determining **what type of work the team should expect each month, what should be worked first, where manual research adds the most value, how workload can be distributed more efficiently, and how far down the score distribution it makes sense to work based on available employee capacity.**
+- 📈 **Executive KPIs**
+- 📦 **Distributor performance**
+- 📑 **Worksheet performance**
+- 🎯 **Score-range performance**
+- 📊 **Workload prioritization**
+- 📉 **Cumulative workload vs. matching-performance tradeoffs**
+
+Together, the analysis and dashboard created a framework for determining **what type of work the team should expect each month, what should be worked first, where manual research adds the most value, how workload can be distributed more efficiently, and how far down the score distribution it makes sense to work based on available employee capacity.**
 
 Ultimately, the project connected technical analysis to a larger operational objective:
 
@@ -40,6 +47,7 @@ Ultimately, the project connected technical analysis to a larger operational obj
 - 📊 Built **Excel PivotTables** to analyze performance across distributors, worksheets, score ranges, record volumes, and mapping outcomes.
 - 🧮 Created **Power Pivot / DAX measures** for Quick Match %, Manual Match %, Create New %, Not Mapped %, Total Match %, and cumulative performance.
 - 📈 Developed a **cumulative score-range analysis** to quantify the tradeoff between workload coverage and matching performance.
+- 📊 Developed a **Power BI dashboard** to translate the analytical framework into executive KPIs, distributor analysis, worksheet analysis, score-range performance, and workload-prioritization reporting.
 - 📋 Analyzed **877 June 2026 records**, with **648 successfully matched — a 73.9% Total Match Rate**.
 - ⚡ Identified **302 Quick Matches (34.4%)** and **346 Manual Matches (39.5%)**.
 - 🎯 Found that scores from **50–80 covered only 38.1% of the workload while producing 309 successful matches at a 92.5% Total Match Rate**.
@@ -101,7 +109,9 @@ More practically:
 This required measuring both:
 
 ### **Workload Coverage**
+
 and
+
 ### **Matching Success**
 
 ---
@@ -207,6 +217,7 @@ The project therefore focused on answering:
 - How should work be distributed across the team?
 - Which groups may support future automation?
 - How can the recurring workload be controlled before additional backlog accumulates?
+- How can the findings be presented through **Power BI** for clearer operational decision support?
 
 The objective was not simply to analyze what had already happened.
 
@@ -403,6 +414,130 @@ This transformed the analysis from a descriptive report into a **workload-priori
 
 ---
 
+# 📊 Step 6: Power BI Dashboard Development
+
+After completing the underlying analysis in **Python, Excel, Power Pivot, and DAX**, I extended the project into **Microsoft Power BI** to create an interactive business-intelligence and decision-support dashboard.
+
+The purpose of the dashboard was not simply to recreate the Excel analysis visually.
+
+It was designed to make the project's major findings easier to interpret by bringing together:
+
+- 📊 **Key performance indicators**
+- 🎯 **Match-score performance**
+- 📦 **Distributor workload**
+- 📑 **Worksheet performance**
+- ⚡ **Quick Match behavior**
+- 🔍 **Manual Match behavior**
+- 📈 **Cumulative workload coverage**
+- ⏱️ **Workload-prioritization tradeoffs**
+
+The dashboard organized the analysis into focused reporting views so the same underlying customer-matching data could be evaluated from both an **operational** and **management-reporting** perspective.
+
+---
+
+## 📈 Executive Overview
+
+The **Executive Overview** provides a high-level view of the customer-matching process.
+
+Key performance indicators include:
+
+- 📋 **Total Records**
+- ✅ **Total Matches**
+- 📈 **Total Match Rate**
+- ⚡ **Quick Match Rate**
+- 🔍 **Manual Match Rate**
+
+These KPIs summarize the overall workload and immediately show how much of the analyzed data was successfully resolved.
+
+The page also visualizes **performance across Match Score ranges**, making it easier to see how matching behavior changes as scores decrease.
+
+One of the strongest patterns was:
+
+> ### **Higher score ranges were heavily concentrated in Quick Matches, while lower score ranges became increasingly dependent on manual research.**
+
+This distinction is important because Match Score was not simply predicting whether a record could eventually be matched.
+
+It was also helping identify **what type of employee effort the record was likely to require**.
+
+---
+
+## 📦 Distributor Analysis
+
+The **Distributor Analysis** view examines both **record volume and matching performance across distributor sources**.
+
+The dashboard allows distributor groups to be compared using measures such as:
+
+- 📊 **Total Records**
+- ✅ **Total Matches**
+- 📈 **Total Match Rate**
+- ⚡ **Quick Match Rate**
+- 🔍 **Manual Match Rate**
+
+This is important because distributor workload was not evenly distributed.
+
+The five highest-volume distributors accounted for:
+
+> ### **720 of 877 records — approximately 82.1% of the entire analyzed workload.**
+
+That concentration means workload planning can focus on the sources that historically generate the largest share of incoming records.
+
+The distributor view also makes it easier to identify where matching behavior differs by source.
+
+Rather than assuming every distributor should be handled identically, the analysis supports evaluating:
+
+> ### **Distributor + Score Range + Record Volume + Historical Outcome**
+
+---
+
+## 📑 Worksheet Analysis
+
+The **Worksheet Analysis** view compares performance across the major worksheet / record groups:
+
+- 📋 **Default D365**
+- 🗃️ **Historic**
+- 🔗 **In D365**
+
+The dashboard compares these groups across:
+
+- 📊 **Total Records**
+- ⚡ **Quick Match Rate**
+- 🔍 **Manual Match Rate**
+- ✅ **Total Match Rate**
+
+The underlying analysis showed meaningful differences between these populations.
+
+For example:
+
+- 🏆 **In D365:** highest Total Match Rate at **78.9%**
+- ⚡ **Historic:** highest Quick Match Rate at **40.6%**
+- 📦 **Default D365:** represented **48.7% of the analyzed workload**
+
+Worksheet type therefore provided another indicator of **what kind of work employees should expect before beginning individual record research**.
+
+---
+
+## 🎯 Workload Prioritization
+
+The **Workload Prioritization** view connects the Power BI dashboard directly to the project's central business question:
+
+> ### **How much of the workload should the team process before additional employee effort begins producing diminishing returns?**
+
+The dashboard visualizes the relationship between:
+
+### **Cumulative Workload Coverage**
+
+and
+
+### **Cumulative Matching Performance**
+
+This allows the underlying workload tradeoff to be viewed visually rather than only through static tables.
+
+The purpose is to help answer:
+
+> **How much additional work are we taking on, how many additional matches are we gaining, and what happens to overall matching performance as we expand the workload?**
+
+---
+
 # 🔥 Key Findings
 
 The June 2026 analysis contained:
@@ -580,7 +715,7 @@ the analysis could answer:
 
 > ### **"If we increase the amount of work reviewed, how much additional coverage and matching output do we gain, and what happens to overall efficiency?"**
 
-This became the basis of the project's **cumulative sweet-spot analysis**.
+This became the basis of the project's **cumulative sweet-spot analysis** and the **Power BI workload-prioritization view**.
 
 ---
 
@@ -843,6 +978,8 @@ The analysis made those tradeoffs visible.
 ⬇️  
 **Distribute Work More Efficiently Across Team Members**  
 ⬇️  
+**Monitor Performance Through Power BI**  
+⬇️  
 **Complete More Meaningful Work in Available Time**  
 ⬇️  
 **Prevent Additional Backlog**
@@ -851,7 +988,7 @@ The analysis made those tradeoffs visible.
 
 # 💡 Time Is a Business Resource
 
-The goal was not simply to make an Excel report faster.
+The goal was not simply to make an Excel report or Power BI dashboard.
 
 The goal was to make the **people performing the actual work more efficient**.
 
@@ -866,6 +1003,8 @@ Expanding through the next score range:
 > ### **53.6% of the workload produced 398 matches at an 84.7% Total Match Rate.**
 
 That information allows the business to make a more informed decision about **how much employee time should be committed to progressively more research-intensive portions of the workload**.
+
+Power BI provides a visual layer for communicating that relationship between **workload coverage and matching performance**.
 
 In practical terms:
 
@@ -955,6 +1094,14 @@ The complete analytical process created the following chain:
 ⬇️  
 **Distributor + Worksheet + Score-Range Findings**  
 ⬇️  
+**Power BI Dashboard Development**  
+⬇️  
+**Executive KPI Reporting**  
+⬇️  
+**Distributor + Worksheet + Workload-Prioritization Views**  
+⬇️  
+**Visual Decision Support**  
+⬇️  
 **Identify Highest-Value Monthly Work**  
 ⬇️  
 **Prioritize & Distribute Work Across the Team**  
@@ -1010,6 +1157,10 @@ In essence:
 - 📈 **PivotTables**
 - 🧮 **Power Pivot**
 - 📐 **DAX Measures**
+- 📊 **Microsoft Power BI**
+- 📈 **Dashboard Development**
+- 🎯 **Executive KPI Reporting**
+- 📊 **Data Visualization**
 - 📈 **Cumulative Performance Analysis**
 - 📂 **Multi-Workbook Data Consolidation**
 - 🧹 **Data Cleaning & Transformation**
@@ -1024,6 +1175,7 @@ In essence:
 - 💡 **Business Process Analysis**
 - 📋 **Requirements Translation**
 - 🎯 **Data-Driven Decision Support**
+- 📊 **Business Intelligence Reporting**
 
 ---
 
@@ -1038,6 +1190,7 @@ In essence:
 | **PivotTables** | Distributor, worksheet, score-range, and outcome analysis |
 | **Power Pivot** | Data-model calculations and analytical measures |
 | **DAX** | Match-rate and cumulative-performance measures |
+| **Power BI** | Interactive dashboards, KPI reporting, performance visualization, and workload-prioritization reporting |
 | **Excel Formulas** | Classification, calculations, and supporting workflow metrics |
 
 ---
@@ -1062,7 +1215,7 @@ In essence:
 ⬇️  
 **Calculate Mapping Outcomes**  
 ⬇️  
-**Generate Structured Data**  
+**Generate Structured Analytical Data**  
 ⬇️  
 **Microsoft Excel**  
 ⬇️  
@@ -1073,6 +1226,18 @@ In essence:
 **Cumulative Sweet-Spot Analysis**  
 ⬇️  
 **Distributor / Worksheet / Score Analysis**  
+⬇️  
+**Microsoft Power BI**  
+⬇️  
+**Executive KPI Reporting**  
+⬇️  
+**Distributor Analysis**  
+⬇️  
+**Worksheet Analysis**  
+⬇️  
+**Workload Prioritization**  
+⬇️  
+**Visual Decision Support**  
 ⬇️  
 **Answer Leadership's Business Questions**  
 ⬇️  
@@ -1088,7 +1253,7 @@ In essence:
 
 # ✅ Outcome
 
-This project transformed **several months of manual customer-matching work into a repeatable analytical framework for managing recurring distributor data**.
+This project transformed **several months of manual customer-matching work into a repeatable analytical and business-intelligence framework for managing recurring distributor data**.
 
 More importantly, it began with **specific business questions from leadership**:
 
@@ -1104,16 +1269,25 @@ Using **Python and Pandas in Jupyter Notebook**, I consolidated completed workbo
 
 Using **Excel PivotTables, Power Pivot, and custom DAX measures**, I analyzed those results across distributors, worksheet types, score ranges, record volumes, final mapping outcomes, and cumulative performance.
 
-The analysis demonstrated that **877 monthly records were not 877 equal pieces of work**.
+Using **Power BI**, I then translated the analytical framework into an interactive dashboard that presented the findings through:
+
+- 📈 **Executive KPIs**
+- 📦 **Distributor analysis**
+- 📑 **Worksheet analysis**
+- 🎯 **Score-range performance**
+- 📊 **Workload prioritization**
+- 📉 **Cumulative workload-versus-performance analysis**
+
+The analysis demonstrated that the **877 analyzed records were not 877 equal pieces of work**.
 
 Different portions of the dataset had dramatically different:
 
-- Record volumes
-- Quick Match rates
-- Manual Match rates
-- Total Match rates
-- Research requirements
-- Potential value per employee hour
+- 📦 Record volumes
+- ⚡ Quick Match rates
+- 🔍 Manual Match rates
+- 📈 Total Match rates
+- ⏱️ Research requirements
+- 💡 Potential value per employee hour
 
 The cumulative analysis quantified those tradeoffs.
 
@@ -1139,6 +1313,8 @@ That meant the analysis did not simply identify which records were "good" or "ba
 
 It identified **different types of work and the employee effort associated with them**.
 
+Power BI then made those patterns easier to communicate by converting the analytical results into **KPIs, comparative visualizations, and workload-prioritization reporting**.
+
 The resulting framework could help determine:
 
 - 🎯 **What should be worked first**
@@ -1150,9 +1326,10 @@ The resulting framework could help determine:
 - 👥 **How work can be distributed more intelligently across the team**
 - 🤖 **Where automation may provide additional value**
 - 🗃️ **How monthly efficiency can create capacity for backlog reduction**
+- 📊 **How operational performance can be communicated through interactive BI reporting**
 
 Most importantly, the project connected the original leadership questions to a measurable operational strategy:
 
-> ### **Business Question → Historical Data → Python/Pandas → Excel PivotTables → Power Pivot/DAX → Quantified Findings → Work Prioritization → Time Savings → Backlog Capacity → Better Customer Data → Downstream Business Value**
+> ### **Business Question → Historical Data → Python/Pandas → Excel PivotTables → Power Pivot/DAX → Power BI → Quantified Findings → Visual Decision Support → Work Prioritization → Time Savings → Backlog Capacity → Better Customer Data → Downstream Business Value**
 
-Rather than using analytics simply to describe what had already happened, this project used **Python, Pandas, Jupyter Notebook, Excel PivotTables, Power Pivot, DAX, and business analysis to answer leadership's questions and determine how future work could be performed more efficiently.**
+Rather than using analytics simply to describe what had already happened, this project used **Python, Pandas, Jupyter Notebook, Excel PivotTables, Power Pivot, DAX, Power BI, and business analysis to answer leadership's questions, communicate the findings, and determine how future work could be performed more efficiently.**
